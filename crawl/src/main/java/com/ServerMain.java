@@ -1,5 +1,5 @@
 package com;
-/* Chinh sua tren server may client */
+/* Chinh sua hop nhat giua server & client */
 
 import com.controller.MovieController;
 import com.db.DatabaseManager;
