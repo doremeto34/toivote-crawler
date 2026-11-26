@@ -1,0 +1,23 @@
+# Compiled class files & build directories
+**/target/
+**/*.class
+
+# Eclipse project files
+**/.settings/
+**/.project
+**/.classpath
+
+# IntelliJ IDEA
+**/.idea/
+**/*.iml
+
+# VS Code
+**/.vscode/
+
+# Logs & temp output
+**/*.log
+crawl_output.txt
+
+# Databases
+*.db
+**/*.db

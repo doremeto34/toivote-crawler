@@ -1,0 +1,19 @@
+# ============================================================
+# Docker Compose for the crawler Linux VM
+# Usage:
+#   docker compose up -d          # start in background
+#   docker compose down           # stop & remove
+# ============================================================
+services:
+  crawler-vm:
+    build: .
+    container_name: crawler-linux
+    ports:
+      - "2222:22"      # SSH: host port 2222 → container port 22
+      - "8080:8080"    # HTTP API: host port 8080 → container port 8080
+    volumes:
+      - crawler_data:/home/crawler/app/data   # persistent SQLite DB
+    restart: unless-stopped
+
+volumes:
+  crawler_data:
