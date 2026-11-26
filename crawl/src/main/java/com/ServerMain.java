@@ -1,4 +1,5 @@
 package com;
+/* Chinh sua tren server may client */
 
 import com.controller.MovieController;
 import com.db.DatabaseManager;
